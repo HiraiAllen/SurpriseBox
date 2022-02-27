@@ -1,0 +1,199 @@
+/*
+font-family: 'Cairo', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Lato', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.icon_ayuda{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 200;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 32px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(214, 214, 214, 0.452);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mensaje_ayuda{
+    position: fixed;
+    bottom: 0px;
+    z-index: 200;
+    padding: 15px 15px;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#close_ayuda, #close_popup{
+    align-self: flex-end;
+    margin: 0px 25px 0px 0px;
+    color:#424242;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+}
+
+.mensaje_ayuda p{
+    width: 90%;
+    color: #000;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.icon_ayuda:hover{
+    box-shadow: 1px 1px 6px #a8a8a8;
+}
+
+.password_container{
+    background: rgb(77,0,28);
+    background: linear-gradient(90deg, rgba(77,0,28,1) 0%, rgba(149,0,53,1) 50%, rgba(255,82,193,1) 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password_box{
+    width: 35%;
+    height: 150px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 12px rgb(47, 47, 47);
+}
+
+.password_input{
+    border: none;
+    border-bottom: 1px #b6b6b6 solid;
+    width: 90%;
+    padding: 10px 5px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 28px;
+    outline: none;
+}
+
+.btn-confirm{
+    background: rgb(77,0,28);
+    background: linear-gradient(90deg, rgba(77,0,28,1) 0%, rgba(149,0,53,1) 50%, rgba(255,82,193,1) 100%);
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: 15px 20px 0px 0px;
+}
+
+.cards_presentation{
+    display: none;
+}
+
+.cards_presentation_active{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgb(47, 47, 47);
+    width: 50%;
+    height: 560px;
+    padding: 20px;
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 14px #383838;
+    cursor: pointer;
+}
+
+#red{
+    background-color: #d80b0b;
+}
+
+#green{
+    background-color: #00a000;
+}
+
+#yellow{
+    background-color: #f0f00c;
+    color: #000;
+}
+
+#blue{
+    background-color: #01269e;
+}
+
+#purple{
+    background-color: #920592;
+}
+
+#black{
+    background-color: #000;
+}
+
+.popup_container{
+    display: none;
+}
+
+.popup_container_active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 500;
+}
+
+.popup_box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 40%;
+    height: 150px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+}

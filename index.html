@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500&family=Inconsolata:wght@200;300;600&family=Lato:wght@300;400&family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@300;700&family=Roboto:wght@100;300;400&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main">
+        <div class="icon_ayuda" id="icon_ayuda">?</div>
+        <div class="mensaje_ayuda" id="mensaje_ayuda">
+            <div id="close_ayuda">X</div>
+            <p>
+            Si no tienes la menor idea de cual podría ser la contraseña, piensa en que tu novio te quiere mucho
+            y puseo algo de 5 letras que a ti te gusta mucho. Si quieres una pista extra, empieza por una letra del abecedario poco usada
+            en el español. 
+            </p>
+        </div>
+
+        <div id="password_container" class="password_container">
+            <div class="password_box" id="password_box">
+                <input type="text" placeholder="Contraseña de 5 letras" class="password_input" id="password_input">
+                <button class="btn-confirm" id="btn-confirm-password">Confirmar contraseña</button>
+                <p id="error_message" style="display: none; color: red; font-family: 'Inconsolata', monospace; margin-top: 15px; font-weight: bold;">
+                    Contraseña incorrecta, intentalo nuevamente.
+                </p>
+            </div>
+
+            <div class="cards_presentation" id="cards_presentation">
+                <div class="card red" id="red">Feelings</div>
+                <div class="card green" id="green">Literature</div>
+                <div class="card yellow" id="yellow">Music</div>
+                <div class="card blue" id="blue">Travel</div>
+                <div class="card purple" id="purple">Why you?</div>
+                <div class="card black" id="black">In case of sadness open this box</div>
+            </div>
+        </div>
+
+        <div class="popup_container" id="popup_container">
+            <div class="popup_box">
+                <div id="close_popup">X</div>
+                <p id="popup_text"></p>
+                <a href="" target="_blank" id="popup_link"></a>
+            </div>
+        </div>
+    </main> 
+
+    <script src="app.js"></script>
+</body>
+</html>
